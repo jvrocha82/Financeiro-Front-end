@@ -52,6 +52,7 @@ export const Table = styled.div`
         tr{
         background:blue;
         th{
+            width:20%;
             position: sticky; 
             top: 0px;
             background:gray;
@@ -62,19 +63,7 @@ export const Table = styled.div`
  
     td{
         border-bottom:1px solid black;
-        width:20%;
         height:50px;
-    }
-}
-#tableHeader{
-    padding-right:20px;
-    width:100%;
-    height:40px;
-
-    th{
-        width:20%;
-        background:gray;
-        height:40px;
     }
 }
 

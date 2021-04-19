@@ -5,6 +5,7 @@ import Header from '../../components/Header'
 import ListItem from '../../components/List-Item'
 import BankList from './lists/bank-list'
 import AccountList from './lists/account-list'
+
 //ASSETS
 import Arrow from '../../assets/icons/arrow.png'
 function FinanceDetail() {

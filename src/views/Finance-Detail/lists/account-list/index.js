@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './styles'
 import api from '../../../../services/api'
-function DataList({ sideBarState, Text }) {
+function ListAccount({ sideBarState }) {
     const [accountsData, setAccountsData] = useState([]);
 
     async function loadAccounts() {
@@ -14,7 +14,7 @@ function DataList({ sideBarState, Text }) {
 
     useEffect(() => {
         loadAccounts();
-    })
+    },[])
     return (
         <S.Container sideBarState={sideBarState}>
 
@@ -54,4 +54,4 @@ function DataList({ sideBarState, Text }) {
     )
 }
 
-export default DataList;
+export default ListAccount;

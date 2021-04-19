@@ -40,10 +40,10 @@ font-weight:900;
 export const Table = styled.div`
 
 #table{
-    position:relative;
+   
     border-collapse: collapse;
     border:1px solid black;
-    display:inline-block;
+  
     overflow-y:auto;
     height:600px;
     width:100%;

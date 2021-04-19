@@ -83,8 +83,8 @@ function AddAccount() {
                 <S.FormRow>
                     <S.FormGroup>
                         <p>Tipo da conta</p>
-                        <select  value={type}  onChange={e => setType(e.target.value)}>
-                        <option data-default disabled selected></option>
+                        <select  value={type}   onChange={e => setType(e.target.value)}>
+                        <option defaultValue  value="DEFAULT" data-default disabled selected></option>
                             {typeAccount.map(t => (
                                 
                                 <option value={t.value}>{t.label}</option>
@@ -111,8 +111,8 @@ function AddAccount() {
                     <S.FormGroup>
                         <p>Banco</p>
 
-                        <select value={bankAccountId}  onChange={e => setBankAccountId(e.target.value)} >
-                        <option value="" data-default disabled selected></option>
+                        <select value={bankAccountId}   onChange={e => setBankAccountId(e.target.value)} >
+                        <option defaultValue  value="DEFAULT" data-default disabled selected></option>
                             {bankData.map(t => (
                                 <option value={t._id}>{t.name}</option>
                             ))}

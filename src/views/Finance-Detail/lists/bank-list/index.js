@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './styles'
 import api from '../../../../services/api'
-function DataList({ sideBarState, Text }) {
+
+function BankAccountList({ sideBarState }) {
     const [bankData, setBankData] = useState([]);
 
     async function loadAccounts() {
+        
         await api.get('/bankAccount')
             .then(res => {
                 setBankData(res.data)
@@ -14,7 +16,7 @@ function DataList({ sideBarState, Text }) {
     
     useEffect(() => {
         loadAccounts();
-    })
+    },[])
     return (
         <S.Container sideBarState={sideBarState}>
         
@@ -54,4 +56,4 @@ function DataList({ sideBarState, Text }) {
     )
 }
 
-export default DataList;
+export default BankAccountList;

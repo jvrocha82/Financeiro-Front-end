@@ -25,7 +25,7 @@ export const  Container = styled.div`
     background:#343a40;
     height:60px;
     border-bottom:1px solid lightgray;
-    button{
+    div{
         background:none;
         border:none;
         display:flex;
@@ -36,7 +36,7 @@ export const  Container = styled.div`
         color:white;
  
     }
-    button:hover{
+    div:hover{
         border-bottom:1px solid white;
         color:lightgray;
     }
@@ -50,7 +50,7 @@ export const  Container = styled.div`
 `
 export const  textOpenSideBar = styled.div`
     width:100%;
-button{
+div{
     opacity:${({sideBarState}) => sideBarState ? 100: 0 };
     animation:${({sideBarState}) => sideBarState ? open  : close} 0.40s linear;
 }
